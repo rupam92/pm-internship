@@ -109,7 +109,7 @@ const HeaderBottom = () => {
 
             {/* EXPLORE BUTTON */}
             <div
-              className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-medium  "
+              className="bg-[var(--primary-sky)] text-white px-3 py-2 rounded-pill fw-medium  "
               style={{ fontSize: "14px" }}
             >
               {/* <Nav.Link href="/explore">Explore Ecosystem</Nav.Link> */}
@@ -117,7 +117,7 @@ const HeaderBottom = () => {
 
             </div>
             <div
-              className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-medium  "
+              className="bg-[var(--primary-sky)] text-white px-3 py-2 rounded-pill fw-medium  "
               style={{ fontSize: "14px" }}
             >
             
@@ -132,13 +132,13 @@ const HeaderBottom = () => {
 
           {/* MOBILE EXPLORE BUTTON */}
           <div
-            className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-semibold d-lg-none "
+            className="bg-[var(--primary-sky)] text-white px-3 py-2 rounded-pill fw-semibold d-lg-none "
             style={{ fontSize: "12px" }}
           > <Nav.Link href="/login">Log In</Nav.Link>
             {/* Explore Ecosystem */}
           </div>
           <div
-            className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-semibold d-lg-none "
+            className="bg-[var(--primary-sky)] text-white px-3 py-2 rounded-pill fw-semibold d-lg-none "
             style={{ fontSize: "12px" }}
           > <Nav.Link href="/signup">Sign Up</Nav.Link>
             {/* Explore Ecosystem */}

@@ -34,21 +34,43 @@ const floatingCards = [
 const Home = () => {
   return (
     <>
-      <style>{`
-        @keyframes floatUp {
-          0%   { transform: translateY(0px);   }
-          50%  { transform: translateY(-12px); }
-          100% { transform: translateY(0px);   }
-        }
-        @keyframes fadeSlideIn {
-          from { opacity: 0; transform: translateX(40px); }
-          to   { opacity: 1; transform: translateX(0);    }
-        }
-        .float-card {
-          animation: floatUp 3.5s ease-in-out infinite, fadeSlideIn 0.7s ease forwards;
-          opacity: 0;
-        }
-      `}</style>
+    <style>{`
+  @keyframes floatingLoop {
+    0% {
+      opacity: 0;
+      transform: translateX(40px) translateY(0px);
+    }
+
+    10% {
+      opacity: 1;
+      transform: translateX(0px) translateY(0px);
+    }
+
+    40% {
+      opacity: 1;
+      transform: translateX(0px) translateY(-12px);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translateX(0px) translateY(0px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translateX(-20px) translateY(0px);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateX(40px) translateY(0px);
+    }
+  }
+
+  .float-card {
+    animation: floatingLoop 6s ease-in-out infinite;
+  }
+`}</style>
 
       <div className="mb-3 relative z-0 w-full h-[400px] bg-[url('/home/bg.png')] bg-cover bg-center overflow-hidden">
 
@@ -56,7 +78,7 @@ const Home = () => {
 
           {/* LEFT — text content */}
           <div className="flex flex-col justify-start text-white w-full ">
-            <h1 className="font-[700] mt-5 pt-5 leading-tight" style={{ maxWidth: "480px" }}>
+            <h1 className="font-[700] mt-5 pt-3 leading-tight" style={{ maxWidth: "480px" }}>
               Find the Best Internships & Launch Your Career
             </h1>
             <p className="text-[16px] md:text-[20px] leading-relaxed py-2" style={{ maxWidth: "350px" }}>
