@@ -8,7 +8,7 @@ const Searchbar = () => {
 
   return (
     <div className="container">
-      <div className="bg-white rounded-full flex items-center px-3 h-10 w-full">
+      <div className="bg-white border rounded-full flex items-center px-3 h-10 w-full">
         <CiSearch className="text-[20px] text-black opacity-20" />
         <input
           type="text"

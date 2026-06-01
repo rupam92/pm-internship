@@ -56,12 +56,12 @@ const LanguageDropdown: React.FC = () => {
     <div ref={languageDropdownRef} className="relative inline-block">
       {/* BUTTON */}
       <div className="flex items-center w-20 h-10 relative">
-        <div className="bg-[var(--light-brown)] w-8 h-8 flex items-center justify-center rounded-full absolute left-3 z-10">
+        <div className="bg-[var(--primary-pink)] w-8 h-8 flex items-center justify-center rounded-full absolute left-3 z-10">
           <FaGlobeAmericas className="text-white" />
         </div>
 
         <button
-          className="absolute end-0 w-14 flex items-center fw-semibold justify-end !bg-[#fff] text-[var(--light-brown)] px-1 py-1 shadow-md"
+          className="absolute end-0 w-14 flex items-center fw-semibold justify-end !bg-[#fff] text-[var(--primary-pink)] px-1 py-1 shadow-md"
           onClick={() => setOpen(!open)}
           style={{ fontSize: "11px", borderRadius: "15px" }}
         >

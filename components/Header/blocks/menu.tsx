@@ -13,8 +13,8 @@ const Menu = ({ closeDrawer }: MenuProps) => {
   return (
     <div className="bg-white w-full h-full overflow-y-auto">
       {/* MAIN MENU SECTION */}
-      <div className="bg-[#F4F6FA] px-4 py-2 mt-1">
-        <h3 className="text-[20px] font-semibold text-[#001A4D]">Main Menu</h3>
+      <div className=" px-4 py-2 mt-1">
+        <h3 className="text-[20px] font-semibold text-[#E15B73]">Main Menu</h3>
       </div>
       <div className="px-4 py-2">
         {MenuData.mainMenu.map((menu, index) => (
@@ -26,11 +26,8 @@ const Menu = ({ closeDrawer }: MenuProps) => {
           >
             <div className="border-b border-gray-200 py-3">
               <div className="flex justify-between items-center cursor-pointer">
-                <span className="text-[17px] font-normal text-[#333]">
-                  {menu.titleSmall}
-                  <span className="text-[20px] font-semibold ml-1">
-                    {menu.titleLarge}
-                  </span>
+                <span className="text-[17px] font-normal text-[#001A4D]">
+                  {menu.titleLarge}
                 </span>
               </div>
             </div>
@@ -39,13 +36,13 @@ const Menu = ({ closeDrawer }: MenuProps) => {
       </div>
 
       {/* SUB MENU */}
-      <div className="w-full mt-2">
+      {/* <div className="w-full mt-2">
         <div className="bg-[#F4F6FA] px-4 py-2">
           <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#001A4D" }}>
             Sub Menu
           </h3>
-        </div>
-        <div className="px-4 py-4 flex flex-wrap gap-y-3 gap-x-4">
+        </div> */}
+        {/* <div className="px-4 py-4 flex flex-wrap gap-y-3 gap-x-4">
           {MenuData.subMenu.map((item, index) => (
             <Nav.Link
               key={index}
@@ -57,30 +54,30 @@ const Menu = ({ closeDrawer }: MenuProps) => {
               {item.title}
             </Nav.Link>
           ))}
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
       {/* FOLLOW US */}
       <div>
         <div className="bg-[#F4F6FA] px-4 py-2">
-          <h3 className="text-[20px] font-semibold text-[#001A4D]">Follow us</h3>
+          <h3 className="text-[20px] font-semibold text-[]">Follow us</h3>
         </div>
         <div className="px-4 py-3 flex items-center gap-4">
-          <div className="p-2 bg-[var(--light-brown)] rounded-full">
+          <div className="p-2 bg-[var(--primary-pink)] rounded-full">
             <a href=""><FaFacebook className="text-white text-2xl" /></a>
           </div>
-          <div className="p-2 bg-[var(--light-brown)] rounded-full">
+          <div className="p-2 bg-[var(--primary-pink)] rounded-full">
             <a href=""><FaInstagram className="text-white text-2xl" /></a>
           </div>
-          <div className="p-2 bg-[var(--light-brown)] rounded-full">
+          <div className="p-2 bg-[var(--primary-pink)] rounded-full">
             <a href=""><FaLinkedin className="text-white text-2xl" /></a>
           </div>
-          <div className="p-2 bg-[var(--light-brown)] rounded-full">
+          <div className="p-2 bg-[var(--primary-pink)] rounded-full">
             <a href=""><FaYoutube className="text-white text-2xl" /></a>
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 

@@ -66,7 +66,7 @@ const HeaderBottom = () => {
     <>
       <Navbar
         expand="lg"
-        className="w-full py-4 z-1000 bg-[var(--dark-brown)]"
+        className="w-full py-2 z-1000 bg-white"
         style={{ position: isSticky ? "fixed" : "static", top: "0" }}
       >
         <Container className="d-flex justify-content-between align-items-center">
@@ -74,14 +74,14 @@ const HeaderBottom = () => {
           <div className="d-flex align-items-center gap-3">
             {/* MOBILE TOGGLE ICON */}
             <BiMenuAltLeft
-              className="text-white d-lg-none cursor-pointer h-8 w-8"
+              className="text-[var(--primary-blue)] d-lg-none cursor-pointer h-8 w-8"
               onClick={() => handleShow()}
             />
 
             {/* LOGO */}
             <Navbar.Brand className="m-0 p-0">
               <Nav.Link href="/">
-                <img src="/logo.png" className="w-32" alt="logo" />
+                <img src="/home/logo.png" className="w-18" alt="logo" />
               </Nav.Link>
             </Navbar.Brand>
           </div>
@@ -99,13 +99,9 @@ const HeaderBottom = () => {
                 <div key={index}>
                   <Nav.Link
                     href={item.path}
-                    className="text-white text-decoration-none hover:scale-102 transition transform duration-200"
+                    className=" text-decoration-none hover:scale-102 transition transform duration-200"
                   >
-                    <span className="text-[12px] fw-thin text-light">
-                      {item.titleSmall}
-                    </span>
-                    <br />
-                    <span className="text-[14px] fw-bold">{item.titleLarge}</span>
+                    <span className="text-[14px] fw-bold ">{item.titleLarge}</span>
                   </Nav.Link>
                 </div>
               ))}
@@ -113,11 +109,19 @@ const HeaderBottom = () => {
 
             {/* EXPLORE BUTTON */}
             <div
-              className="bg-[var(--light-brown)] text-white px-3 py-2 rounded-pill fw-medium  "
+              className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-medium  "
               style={{ fontSize: "14px" }}
             >
               {/* <Nav.Link href="/explore">Explore Ecosystem</Nav.Link> */}
-             <Nav.Link href="/BookNow">Book Now</Nav.Link>
+             <Nav.Link href="/login">Log In</Nav.Link>
+
+            </div>
+            <div
+              className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-medium  "
+              style={{ fontSize: "14px" }}
+            >
+            
+             <Nav.Link href="/signup">Sign Up</Nav.Link>
             </div>
 
             {/* LANGUAGE DROPDOWN */}
@@ -128,9 +132,15 @@ const HeaderBottom = () => {
 
           {/* MOBILE EXPLORE BUTTON */}
           <div
-            className="bg-[var(--light-brown)] text-white px-3 py-2 rounded-pill fw-semibold d-lg-none me-md-0 me-3"
+            className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-semibold d-lg-none "
             style={{ fontSize: "12px" }}
-          > <Nav.Link href="/BookNow">Book Now</Nav.Link>
+          > <Nav.Link href="/login">Log In</Nav.Link>
+            {/* Explore Ecosystem */}
+          </div>
+          <div
+            className="bg-[var(--primary-pink)] text-white px-3 py-2 rounded-pill fw-semibold d-lg-none "
+            style={{ fontSize: "12px" }}
+          > <Nav.Link href="/signup">Sign Up</Nav.Link>
             {/* Explore Ecosystem */}
           </div>
         </Container>
@@ -152,7 +162,7 @@ const HeaderBottom = () => {
           <Offcanvas.Title className="w-100 flex justify-between mr-5">
             {
               <Nav.Link href="/">
-                <img src="/logo.png" alt="" className="w-30 h-8" />
+                <img src="/home/logo.png" alt="" className="w-22 h-18" />
               </Nav.Link>
             }
             {/* <LanguageDropdown /> */}

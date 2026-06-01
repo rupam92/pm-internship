@@ -1,13 +1,11 @@
-import HeaderBottom from "@/components/Header/HeaderBottom";
-import HeaderTop from "@/components/Header/HeaderTop";
+import Header from "@/components/Header/Header";
+
 
 
 const Page = () => {
   return <>
-  {/* <ExporterHeader/> */}
-  <HeaderTop />
-  <HeaderBottom />
   
+  <Header />
   </>;
 };
 

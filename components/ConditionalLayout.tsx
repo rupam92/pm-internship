@@ -1,8 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import HeaderTop from './Header/HeaderTop';
-import HeaderBottom from './Header/HeaderBottom';
+import HeaderBottom from './Header/Header';
 
 export default function ConditionalLayout({
   children,
@@ -16,7 +15,7 @@ export default function ConditionalLayout({
     <>
       {!isAuthPage && (
         <>
-          <HeaderTop />
+          {/* <HeaderTop /> */}
           <HeaderBottom />
         </>
       )}
