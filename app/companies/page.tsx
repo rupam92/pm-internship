@@ -1,9 +1,7 @@
+import CompaniesSection from "@/components/Companies/companies";
 
-// import Company from "@/components/Companies/Company";
+const Page = () => {
+  return <CompaniesSection />;
+};
 
-// const Page = () => {
-//   return <Company />;
-// };
-
-// export default Page;
-
+export default Page;

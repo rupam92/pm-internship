@@ -72,7 +72,7 @@ const Home = () => {
   }
 `}</style>
 
-      <div className="mb-3 relative z-0 w-full h-[400px] bg-[url('/home/bg.png')] bg-cover bg-center overflow-hidden">
+      <div className="mb-3 relative z-0 w-full h-[280px] !md:h-[400px] bg-[url('/home/bg.png')] bg-cover bg-center overflow-hidden">
 
         <Container className="w-full h-full flex flex-row items-start px-3">
 
